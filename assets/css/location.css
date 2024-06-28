@@ -1,0 +1,148 @@
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+dialog {
+  margin: auto;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: system-ui;
+  background-color: black;
+}
+
+h1 {
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin-inline: auto;
+  padding-inline: 10px;
+}
+
+.locations {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.movie {
+  background-color: white;
+  padding: 10px;
+  position: relative;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie h3 {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie span {
+  font-size: 10px;
+  background-color: black;
+  color: white;
+  padding: 2px 5px; 
+}
+
+
+.movie p {
+  font-size: 12px;
+}
+
+.adres {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.movieEditControls {
+  display: none;
+  position: absolute;
+  gap: 5px;
+  right: 15px;
+  top: 15px;
+}
+
+.movie:hover .movieEditControls {
+  display: flex;
+}
+
+.movieEditControls a {
+  background-color: white;
+  padding: 2px 5px;
+  display: inline-block;
+}
+
+.movieEditControls a svg {
+  display: inline;
+  width: 16px;
+  fill: black;  
+}
+
+.editorControl {
+  font-size: 16px;
+}
+
+.locationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moviesHeader button {
+  padding-inline: 8px;
+}
+
+dialog {
+  padding: 10px;
+}
+
+dialog form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modelEdit {
+  display: none;
+}
+
+.editModal .modelEdit {
+  display: initial;
+}
+
+.editModal .modelAddNew {
+  display: none;
+}
+
